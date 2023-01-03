@@ -9,10 +9,8 @@ public class EmployeeWage {
 	static final int PART_TIME_HOUR = 4;
 	static final int MAX_WORKING_HOUR = 100;
 	static final int WORKING_DAYS_PER_MONTH = 20;
-
-	public static void main(String[] args) {
-		System.out.println("Welcome to employee wage");
-
+	
+	void calculateEmployeeWage() {
 		int totalWorkingDays = 1;
 		int totalWage = 0;
 		int empWorkingDays=0;
@@ -53,5 +51,15 @@ public class EmployeeWage {
 		System.out.println("Employee work for total of " + empWorkingDays + " days.");
 		System.out.println("Employee works for total of " + totalEmpHrs + "hours.");
 		System.out.println("Total salary of the employee after " + WORKING_DAYS_PER_MONTH + " days is : " + totalWage);
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println("********Welcome to employee wage computation problem.**********\n");
+		
+		EmployeeWage obj = new EmployeeWage();
+		
+		obj.calculateEmployeeWage();
+
 	}
 }
